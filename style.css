@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(4, 4, 4);
+    padding: 15px 50px;
+    position: sticky;
+    height: 90px;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.logo{
+    color: orange;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-right: 7%;
+}
+.nav-links li {
+    position: relative;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    pad: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.nav-links a:hover{
+    background-color: orange;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+}
+.dropdown,
+.sub-dropdown{
+    position: absolute;
+    background-color: orange;
+    display: none;
+    color: white;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px black;
+    border-radius: 5px;
+    top: 30px;
+    left: 0;
+}
+.dropdown li{
+    position: relative;
+    list-style: none;
+}
+.sub-dropdown{
+    left: 100%;
+    top: 0px;
+}
+.nav-links li:hover> .dropdown,
+.dropdown li:hover>.sub-dropdown{
+    display: block;
+}
+.dropdown a,
+.sub-dropdown a{
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.dropdown a:hover,
+.sub-dropdown a:hover{
+    background-color:white;
+    color: orange;
+    transform: scale(1.05);
+}
+.main-image{
+    width: 100%;
+    height: 919px;
+    filter: brightness(50%);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+.first{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+.main-text{
+    text-align: center;
+    color: white;
+    font-size: 21px;
+    margin-top: 15%;
+}
+.victory{
+    color: orange;
+    font-family: monospace;
+}
+p{
+    font-family: cursive;
+}
+.titlee{
+    font-size: 80px;
+}
+.icons{
+    font-size: 20px;
+    display: flex;
+    height: 50px;
+    color: white;
+    margin-top: 1%;
+    gap: 35px;
+    justify-content: center;
+}
+.facebook{
+    font-size: 20px;
+    font-size: 30px;
+}
+.instagram{
+    font-size: 20px;
+    font-size: 30px;
+}
+.tiktok{
+    font-size: 20px;
+    font-size: 30px;
+}
+.categories{
+    color: black;
+    text-align: center;
+    margin: 9%;
+    font-family: cursive;
+}
+section{
+    height: 2600px;
+}
+.allFood{
+    display: flex;
+    justify-content: center ;
+    flex-direction: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-top: 5%;
+}
+.card-body{
+    width: 100%;
+}
+.nuts{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.card-text{
+    text-align: center;
+    font-family: revert;
+}
+.red{
+    color: rgb(207, 135, 0);
+}
+.card-title{
+    text-align: center;
+    font-family: cursive;
+}
+.second{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.price{
+    font-family: system-ui;
+    font-size: 30px;
+}
+.primary{
+    background-color: orange;
+    color: black;
+    border: none;
+}
+.primary:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    font-family: system-ui;
+    transition: 0.7s;
+}
+.for-image{
+    background-color: rgba(128, 128, 128, 0.349);
+}
+.card:hover{
+    box-shadow:  3px 3px 3px 3px rgba(0, 0, 0, 0.527);
+    transition: 0.5s;
+}
+.main{
+    width: 100%;
+    margin-top: 195%;
+    display: flex;
+    height: 600px;
+}
+.one{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: right;
+}
+.two{
+    width: 50%;
+    height: 600px;
+}
+.about{
+    text-align: center;
+    font-size: 80px;
+    font-family: cursive;
+    margin-top: 12%;
+    color: orange;
+}
+.text-one{
+    width: 65%;
+}
+.loc{
+    font-size: 70px;
+    margin-top: 6%;
+    color: orange;
+}
+.p-loc{
+    font-size: 22px;
+    color: orange;
+}
+.location{
+    color: red;
+}
+.image-loc{
+    margin-left: 12%;
+    width: 500px;
+    margin-top: 3%;
+    border-radius: 8px;
+}
+.fon{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 600px;
+    filter: brightness(50%);
+}
+section{
+    height: 1900px;
+}
+.main-two{
+    width: 100%;
+    height: 500px;
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.describe{
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+}
+.abot{
+    text-align: center;
+    font-size: 65px;
+    margin-top: 6%;
+    color: orange;
+}
+.img{
+    width: 300px;
+}
+.foot{
+    background-color: black;
+    margin-top: 199%;
+}
+.cont{
+    font-size: 60px;
+    color: orange;
+    margin-top: 8%;
+}
+.cont-text{
+    color: orange;
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.icon{
+    width: 80px;
+    display: flex;
+    gap: 25px;
+    margin-top: 9%;
+}
+.facebook{
+    color: orange;
+    cursor: pointer;
+}
+.instagram{
+    color: orange;
+    cursor: pointer;
+}
+.tiktok{
+    color: orange;
+    cursor: pointer;
+}
+i:hover{
+    background-color: orange;
+    border-radius: 50px;
+    color: white;
+    font-size: 45px;
+    transition: 0.5s;
+}
